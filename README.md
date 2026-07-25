@@ -45,6 +45,29 @@
 
 ---
 
+## 🎥 Demo
+
+Watch the full project walkthrough — detection engine, dashboard, SDK, SEL, 
+and the browser extension, all in one video.
+
+📹 **[Watch the Full Demo](https://github.com/tusharr-mishra/malintent-llm-firewall/releases/tag/demo-v1)** (~5–7 min)
+
+<details>
+<summary>Feature-specific clips</summary>
+
+| Feature | Video |
+|---|---|
+| OTP Registration & JWT Auth | [Watch](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/auth/otp-registration-jwt-flow.mp4) |
+| Dashboard Overview | [Watch](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/dashboard/dashboard-overview.mp4) |
+| Threat Analysis / Forensics | [Watch](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/dashboard/threat-analysis-forensics-view.mp4) |
+| Browser Extension — Real-Time Interception | [Watch](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/extension/extension-realtime-interception.mp4) |
+| SEL — Sensitive Data Masking | [Watch](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/sel/sel-data-masking-demo.mp4) |
+| SDK Integration Demo | [Watch](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/sdk/sel-sdk-integration-demo.mp4) |
+
+</details>
+
+---
+
 ## What is MalIntent?
 
 LLMs deployed in production are continuously targeted by jailbreaks, prompt injections, persona hijacks, and indirect RAG attacks. A single-layer classifier is a single point of failure.
