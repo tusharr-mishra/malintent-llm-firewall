@@ -45,24 +45,38 @@
 
 ---
 
-## 🎥 Demo
+## 📹 Demos & Releases
 
-Watch the full project walkthrough — detection engine, dashboard, SDK, SEL, 
-and the browser extension, all in one video.
+The full project demo and the browser extension package are both published as GitHub Releases rather than committed to the repository's git history — this keeps clones fast and the codebase itself lightweight.
 
-📹 **[Watch the Full Demo](https://github.com/tusharr-mishra/malintent-llm-firewall/releases/tag/demo-v1)** (~5–7 min)
+**[▶ Full Project Walkthrough — Detection, Dashboard, SDK, SEL & Extension](https://github.com/tusharr-mishra/malintent-llm-firewall/releases/tag/demo-v1)**
+A complete end-to-end demo (~5–7 min) covering every layer of the system in one continuous recording — from a prompt hitting the firewall to the dashboard lighting up with the result.
+
+**[⬇ Browser Extension v1.0.0 — Download & Install](https://github.com/tusharr-mishra/malintent-llm-firewall/releases/tag/v1.0.0)**
+The Chrome extension package (`malintent_extension.zip`), ready to load unpacked — see [Browser Extension Integration](#browser-extension-integration) below for full install steps.
 
 <details>
-<summary>Feature-specific clips</summary>
+<summary><b>Individual feature clips</b> (<code>assets/videos/</code>)</summary>
 
-| Feature | Video |
+| What it shows | Recording |
 |---|---|
-| OTP Registration & JWT Auth | [Watch](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/auth/otp-registration-jwt-flow.mp4) |
-| Dashboard Overview | [Watch](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/dashboard/dashboard-overview.mp4) |
-| Threat Analysis / Forensics | [Watch](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/dashboard/threat-analysis-forensics-view.mp4) |
-| Browser Extension — Real-Time Interception | [Watch](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/extension/extension-realtime-interception.mp4) |
-| SEL — Sensitive Data Masking | [Watch](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/sel/sel-data-masking-demo.mp4) |
-| SDK Integration Demo | [Watch](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/sdk/sel-sdk-integration-demo.mp4) |
+| OTP Registration & JWT Auth Flow | [otp-registration-jwt-flow.mp4](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/auth/otp-registration-jwt-flow.mp4) |
+| Real-Time Admin Dashboard | [dashboard-overview.mp4](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/dashboard/dashboard-overview.mp4) |
+| Threat Analysis / Forensics View | [threat-analysis-forensics-view.mp4](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/dashboard/threat-analysis-forensics-view.mp4) |
+| Browser Extension — Live Interception | [extension-realtime-interception.mp4](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/extension/extension-realtime-interception.mp4) |
+| Extension on Gemini | [extension-gemini-demo.mp4](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/extension/extension-gemini-demo.mp4) |
+| SEL — Sensitive Data Masking | [sel-data-masking-demo.mp4](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/sel/sel-data-masking-demo.mp4) |
+| SEL & SDK Integration | [sel-sdk-integration-demo.mp4](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/sdk/sel-sdk-integration-demo.mp4) |
+| Configuration / System Settings | [configuration-page-overview.mp4](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/config/configuration-page-overview.mp4) |
+| Landing Page Walkthrough | [landing-page-walkthrough.mp4](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/product/landing-page-walkthrough.mp4) |
+| Custom API Testing | [api-endpoint-testing.mp4](https://github.com/tusharr-mishra/malintent-llm-firewall/blob/main/assets/videos/sdk/api-endpoint-testing.mp4) |
+
+</details>
+
+<details>
+<summary><b>Screenshots & diagrams</b> (<code>assets/images/</code>)</summary>
+
+Architecture diagrams, API documentation screenshots, and product UI captures used throughout this README live under `assets/images/`, organised into `api-docs/`, `architecture/`, `benchmarks/`, `extension/`, and `product/` subfolders.
 
 </details>
 
@@ -391,7 +405,7 @@ MalIntent includes a **Google Chrome Extension** (Manifest V3, currently **v1.0.
 
 ### Installation
 
-1. Download `malintent_extension.zip` from the Assets section of the [latest release](#).
+1. Download `malintent_extension.zip` from the Assets section of the [latest release](https://github.com/tusharr-mishra/malintent-llm-firewall/releases/tag/v1.0.0).
 2. Extract the `.zip` folder anywhere on your computer.
 3. Open Chrome and go to `chrome://extensions/`.
 4. Turn on **Developer mode** (top-right toggle).
@@ -532,7 +546,11 @@ Reports Layer A/B/C latency, permission validation latency, end-to-end mean, p95
 
 ```text
 malintent/
-├── assets/                         # Project images and assets
+├── assets/
+│   ├── images/                     # Screenshots & diagrams — api-docs/, architecture/,
+│   │                                 benchmarks/, extension/, product/
+│   └── videos/                     # Feature walkthrough clips — auth/, config/, dashboard/,
+│                                     extension/, product/, sdk/, sel/ (see Demos & Releases)
 ├── backend/
 │   ├── malintent/                  # Three-layer detection engine
 │   │   ├── pattern_engine.py       # Layer A — 47 regex patterns
@@ -657,6 +675,14 @@ Drawing from the taxonomy established by [HackAPrompt (arXiv:2311.16119)](https:
 ---
 
 ## Release Notes
+
+### Demo — Full Project Walkthrough (`demo-v1`)
+
+A complete recorded walkthrough of the system — detection engine, dashboard, SDK, Secure Execution Layer, and browser extension — published as a release asset to keep it out of the git history.
+
+📹 [View release](https://github.com/tusharr-mishra/malintent-llm-firewall/releases/tag/demo-v1)
+
+---
 
 ### Browser Extension v1.0.0 — Initial Release
 
